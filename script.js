@@ -1,5 +1,6 @@
-num1 = ""
+num1 = 0
 array = []
+
 
 function zero() {
     num1 += 0
@@ -42,25 +43,61 @@ function nine() {
 }
 
 function clearNum1() {
-    num1 = Number(num1)
-    array.push(num1)
-    num1 = "";
+    if (num1 != 0) {
+        num1 = Number(num1)
+        array.push(num1)
+        num1 = 0;
+    }
 }
 
 function add() {
     clearNum1()
+    if (array[1] === "+") {
+        array[0] += array[2]
+        array.pop()
+        array.pop()
+    }
+    array.push("+")
 }
 
 function subtract() {
     clearNum1()
+    if (array[1] === "-") {
+        array[0] -= array[2]
+        array.pop()
+        array.pop()
+    }
+    array.push("-")
 }
 
 function multiply() {
     clearNum1()
+    if (array[1] === "*") {
+        array[0] *= array[2]
+        array.pop()
+        array.pop()
+    }
+    array.push("*")
 }
 
-
-
+function result() {
+    clearNum1()
+    if (array[1] === "+") {
+        array[0] += array[2]
+        array.pop()
+        array.pop()
+    } else if (array[1] === "-") {
+        array[0] -= array[2]
+        array.pop()
+        array.pop()
+    } else {
+        array[0] *= array[2]
+        array.pop()
+        array.pop()
+    }
+    console.log(array)
+    num1 = 0;
+}
 
 
 
