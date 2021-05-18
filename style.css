@@ -1,0 +1,133 @@
+body {
+    background-color: rgba(0, 255, 242, 0.107);
+}
+
+.container {
+    font-size: 40px;
+    width: 400px;
+    background: LightGray;
+    display: grid;
+    grid-template-columns: 100px 100px 100px 100px;
+    grid-template-rows: 100px 100px 100px 100px 100px 100px;
+}
+
+
+.dtext{
+    font-size: 40px;
+    width: 400px;
+    grid-column-start: 1;
+    background: rgb(92, 92, 92);
+    display: grid;
+}
+
+.d0 {
+    font-size: 40px;
+    width: 100%;
+    grid-column-start: 1;
+    background: LightGray;
+    display: grid;
+}
+
+.d1 {
+    font-size: 40px;
+    width: 100%;
+    
+    background: LightGray;
+    display: grid;
+}
+
+.d2 {
+    font-size: 40px;
+    width: 100%;
+    
+    background: LightGray;
+    display: grid;
+}
+
+.d3 {
+    font-size: 40px;
+    width: 100%;
+    
+    background: LightGray;
+    display: grid;
+}
+
+.d4 {
+    font-size: 40px;
+    width: 100%;
+    
+    background: LightGray;
+    display: grid;
+}
+
+.d5 {
+    font-size: 40px;
+    width: 100%;
+    
+    background: LightGray;
+    display: grid;
+}
+
+.d6 {
+    font-size: 40px;
+    width: 100%;
+    
+    background: LightGray;
+    display: grid;
+}
+
+.d7 {
+    font-size: 40px;
+    width: 100%;
+    
+    background: LightGray;
+    display: grid;
+}
+
+.d8 {
+    font-size: 40px;
+    width: 100%;
+    
+    background: LightGray;
+    display: grid;
+}
+
+.d9 {
+    font-size: 40px;
+    width: 100%;
+    
+    background: LightGray;
+    display: grid;
+}
+
+.d10 {
+    font-size: 40px;
+    width: 100%;
+    
+    background: LightGray;
+    display: grid;
+}
+
+.d11{
+    font-size: 40px;
+    width: 100%;
+    
+    background: LightGray;
+    display: grid;
+}
+
+.d12 {
+    font-size: 40px;
+    width: 100%;
+    
+    background: LightGray;
+    display: grid;
+}
+
+.d13 {
+    font-size: 40px;
+    width: 100%;
+    
+    background: LightGray;
+    display: grid;
+}

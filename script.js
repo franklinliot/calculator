@@ -1,53 +1,97 @@
-num1 = 0
+num1 = ""
 array = []
 
-
 function zero() {
-    num1 += 0
+    num1 += "0"
+    document.getElementById("demo").innerHTML = array + num1;
 }
 
 function one() {
-    num1 += 1
+    num1 += "1";
+    if (array != "") {
+        document.getElementById("demo").innerHTML = array + num1;
+    } else {
+        document.getElementById("demo").innerHTML = num1;
+    }
 }
 
 function two() {
-    num1 += 2
+    num1 += "2";
+    if (array != "") {
+        document.getElementById("demo").innerHTML = array + num1;
+    } else {
+        document.getElementById("demo").innerHTML = num1;
+    }
 }
 
 function three() {
-    num1 += 3
+    num1 += "3";
+    if (array != "") {
+        document.getElementById("demo").innerHTML = array + num1;
+    } else {
+        document.getElementById("demo").innerHTML = num1;
+    }
 }
 
 function four() {
-    num1 += 4
+    num1 += "4";
+    if (array != "") {
+        document.getElementById("demo").innerHTML = array + num1;
+    } else {
+        document.getElementById("demo").innerHTML = num1;
+    }
 }
 
 function five() {
-    num1 += 5
+    num1 += "5";
+    if (array != "") {
+        document.getElementById("demo").innerHTML = array + num1;
+    } else {
+        document.getElementById("demo").innerHTML = num1;
+    }
 }
 
 function six() {
-    num1 += 6
+    num1 += "6";
+    if (array != "") {
+        document.getElementById("demo").innerHTML = array + num1;
+    } else {
+        document.getElementById("demo").innerHTML = num1;
+    }
 }
 
 function seven() {
-    num1 += 7
+    num1 += "7";
+
+    if (array != "") {
+        document.getElementById("demo").innerHTML = array + num1;
+    } else {
+        document.getElementById("demo").innerHTML = num1;
+    }
 }
 
 function eight() {
-    num1 += 8
+    num1 += "8";
+    if (array != "") {
+        document.getElementById("demo").innerHTML = array + num1;
+    } else {
+        document.getElementById("demo").innerHTML = num1;
+    }
 }
 
 function nine() {
-    num1 += 9
+    num1 += "9";
+    if (array != "") {
+        document.getElementById("demo").innerHTML = array + num1;
+    } else {
+        document.getElementById("demo").innerHTML = num1;
+    }
 }
 
 function clearNum1() {
-    if (num1 != 0) {
-        num1 = Number(num1)
-        array.push(num1)
-        num1 = 0;
-    }
+    num1 = Number(num1)
+    array.push(num1)
+    num1 = "";
 }
 
 function add() {
@@ -56,27 +100,54 @@ function add() {
         array[0] += array[2]
         array.pop()
         array.pop()
+    } else if (array[1] === "-") {
+        array[0] -= array[2]
+        array.pop()
+        array.pop()
+    } else if (array[1] === "*") {
+        array[0] *= array[2]
+        array.pop()
+        array.pop()
     }
+    document.getElementById("demo").innerHTML = array + "+";
     array.push("+")
 }
 
 function subtract() {
     clearNum1()
-    if (array[1] === "-") {
+    if (array[1] === "+") {
+        array[0] += array[2]
+        array.pop()
+        array.pop()
+    } else if (array[1] === "-") {
         array[0] -= array[2]
         array.pop()
         array.pop()
+    } else if (array[1] === "*") {
+        array[0] *= array[2]
+        array.pop()
+        array.pop()
     }
+    document.getElementById("demo").innerHTML = array;
     array.push("-")
 }
 
 function multiply() {
     clearNum1()
-    if (array[1] === "*") {
+    if (array[1] === "+") {
+        array[0] += array[2]
+        array.pop()
+        array.pop()
+    } else if (array[1] === "-") {
+        array[0] -= array[2]
+        array.pop()
+        array.pop()
+    } else if (array[1] === "*") {
         array[0] *= array[2]
         array.pop()
         array.pop()
     }
+    document.getElementById("demo").innerHTML = array;
     array.push("*")
 }
 
@@ -95,35 +166,13 @@ function result() {
         array.pop()
         array.pop()
     }
-    console.log(array)
-    num1 = 0;
+    document.getElementById("demo").innerHTML = array;
+    num1 = "";
 }
 
-
-
-
-
-
-
-/*
-  function askNum() {
-      x = Number(prompt())
-      y = Number(prompt())
-  }
-
-  function calculator() {
-      askNum()
-      let type = prompt()
-      if (type === "add") {
-          result = x + y;
-          console.log(result);
-      } else if (type === "subtract") {
-          result = x - y;
-          console.log(result);
-      } else {
-          result = x * y;
-          console.log(result);
-      }
-
-  }
-*/
+function clearArray() {
+    array.pop()
+    array.pop()
+    document.getElementById("demo").innerHTML = "0";
+    num1="";
+}

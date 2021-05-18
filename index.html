@@ -1,29 +1,35 @@
 <html>
 
 <head>
-
+    <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
-    <button onclick="calculator()">Calculator</button>
-    <button onclick=zero()>0</button>
-    <button onclick=one()>1</button>
-    <button onclick=two()>2</button>
-    <button onclick=three()>3</button>
-    <button onclick=four()>4</button>
-    <button onclick=five()>5</button>
-    <button onclick=six()>6</button>
-    <button onclick=seven()>7</button>
-    <button onclick=eight()>8</button>
-    <button onclick=nine()>9</button>
 
-    <button onclick=add()>add</button>
-    <button onclick=subtract()>subtract</button>
-    <button onclick=multiply()>multiply</button>
-    <button onclick=result()>result</button>
+    <div class="container">
+        <div class="dtext">
+            <p id="demo"></p>
+        </div>
+        <div class="d0"><button onclick=zero()>0</button></div>
+        <div class="d1"><button onclick=one()>1</button></div>
+        <div class="d2"><button onclick=two()>2</button></div>
+        <div class="d3"> <button onclick=three()>3</button></div>
+        <div class="d4"><button onclick=four()>4</button></div>
+        <div class="d5"><button onclick=five()>5</button></div>
+        <div class="d6"><button onclick=six()>6</button></div>
+        <div class="d7"><button onclick=seven()>7</button></div>
+        <div class="d8"><button onclick=eight()>8</button></div>
+        <div class="d9"><button onclick=nine()>9</button></div>
+
+        <div class="d10"><button onclick=add()>+</button></div>
+        <div class="d11"><button onclick=subtract()>-</button></div>
+        <div class="d12"><button onclick=multiply()>*</button></div>
+        <div class="d13"><button onclick=result()>=</button></div>
+
+        <div class="d13"><button onclick=clearArray()>AC</button></div>
 
 
-
+    </div>
 </body>
 <script src="script.js"></script>
 
