@@ -1,5 +1,9 @@
 body {
     background-color: rgba(203, 252, 249, 0.438);
+    position: absolute;
+    left: 50%;
+    top: 20%;
+    transform: translate(-50%,0);
 }
 
 p {
@@ -23,7 +27,7 @@ p {
     background: rgba(189, 189, 189, 0.125);
     display: grid;
     border-bottom: 4px solid black;
-    text-align:  right;
+    text-align: right;
 
 }
 
@@ -169,11 +173,19 @@ p {
     background-color: rgba(83, 0, 238, 0.205);
 }
 
-#myDivide, #myMultiply, #mySubtract, #myPlus, #myResult{
+#myDivide,
+#myMultiply,
+#mySubtract,
+#myPlus,
+#myResult {
     font-size: 40px;
     background-color: rgb(255, 123, 0);
 }
 
-#myDivide:hover, #myMultiply:hover, #mySubtract:hover, #myPlus:hover, #myResult:hover{
+#myDivide:hover,
+#myMultiply:hover,
+#mySubtract:hover,
+#myPlus:hover,
+#myResult:hover {
     background-color: rgba(255, 123, 0, 0.692);
 }

@@ -1,14 +1,24 @@
 num1 = ""
 array = []
+occDott = 0
+document.getElementById("demo").innerHTML = "0"
+
 
 function zero() {
+    if (array.length === 1) {
+        num1 = array[0]
+        array.pop()
+    }
     num1 += "0"
     document.getElementById("demo").innerHTML = array.join("") + num1;
 }
 
 
 function one() {
-
+    if (array.length === 1) {
+        num1 = array[0]
+        array.pop()
+    }
     num1 += "1";
     if (array != "") {
         document.getElementById("demo").innerHTML = array.join("") + num1;
@@ -18,6 +28,10 @@ function one() {
 }
 
 function two() {
+    if (array.length === 1) {
+        num1 = array[0]
+        array.pop()
+    }
     num1 += "2";
     if (array != "") {
         document.getElementById("demo").innerHTML = array.join("") + num1;
@@ -27,6 +41,10 @@ function two() {
 }
 
 function three() {
+    if (array.length === 1) {
+        num1 = array[0]
+        array.pop()
+    }
     num1 += "3";
     if (array != "") {
         document.getElementById("demo").innerHTML = array.join("") + num1;
@@ -36,6 +54,10 @@ function three() {
 }
 
 function four() {
+    if (array.length === 1) {
+        num1 = array[0]
+        array.pop()
+    }
     num1 += "4";
     if (array != "") {
         document.getElementById("demo").innerHTML = array.join("") + num1;
@@ -45,6 +67,10 @@ function four() {
 }
 
 function five() {
+    if (array.length === 1) {
+        num1 = array[0]
+        array.pop()
+    }
     num1 += "5";
     if (array != "") {
         document.getElementById("demo").innerHTML = array.join("") + num1;
@@ -54,6 +80,10 @@ function five() {
 }
 
 function six() {
+    if (array.length === 1) {
+        num1 = array[0]
+        array.pop()
+    }
     num1 += "6";
     if (array != "") {
         document.getElementById("demo").innerHTML = array.join("") + num1;
@@ -63,6 +93,10 @@ function six() {
 }
 
 function seven() {
+    if (array.length === 1) {
+        num1 = array[0]
+        array.pop()
+    }
     num1 += "7";
     if (num1 != 26061997) {
         if (array != "") {
@@ -76,6 +110,10 @@ function seven() {
 }
 
 function eight() {
+    if (array.length === 1) {
+        num1 = array[0]
+        array.pop()
+    }
     num1 += "8";
     if (array != "") {
         document.getElementById("demo").innerHTML = array.join("") + num1;
@@ -85,8 +123,12 @@ function eight() {
 }
 
 function nine() {
+    if (array.length === 1) {
+        num1 = array[0]
+        array.pop()
+    }
     if (array[1] === "=") {
-        console.log ("coucou")
+        console.log("coucou")
     }
     num1 += "9";
     if (array != "") {
@@ -97,11 +139,19 @@ function nine() {
 }
 
 function dot() {
-    num1 += ".";
-    if (array != "") {
-        document.getElementById("demo").innerHTML = array.join("") + num1;
-    } else {
-        document.getElementById("demo").innerHTML = num1;
+    var occDott = Number(num1.search("."));
+    console.log(occDott)
+    if (occDott === 1) {} else {
+        if (array.length === 1) {
+            num1 = array[0]
+            array.pop()
+        }
+        num1 += ".";
+        if (array != "") {
+            document.getElementById("demo").innerHTML = array.join("") + num1;
+        } else {
+            document.getElementById("demo").innerHTML = num1;
+        }
     }
 }
 
@@ -113,9 +163,6 @@ function PlusMinus() {
         } else {
             document.getElementById("demo").innerHTML = num1;
         }
-    } else {
-        array[0] *= -1;
-        document.getElementById("demo").innerHTML = array.join("")
     }
 }
 
@@ -230,31 +277,31 @@ function divide() {
     array.push("/")
 }
 
-function result() {
-    clearNum1()
-    if (array[1] === "+") {
-        array[0] += array[2]
-        array.pop()
-        array.pop()
-    } else if (array[1] === "-") {
-        array[0] -= array[2]
-        array.pop()
-        array.pop()
-    } else if (array[1] === "*") {
-        array[0] *= array[2]
-        array.pop()
-        array.pop()
-    } else {
-        array[0] /= array[2]
-        array.pop()
-        array.pop()
-    }
-    document.getElementById("demo").innerHTML = array.join("");
-}
-
 function clearArray() {
     array.pop()
     array.pop()
     document.getElementById("demo").innerHTML = "0";
     num1 = "";
+}
+
+function result() {
+    if (array.length === 0) {
+        document.getElementById("demo").innerHTML = num1;
+    } else {
+        clearNum1()
+        if (array[1] === "+") {
+            array[0] += array[2]
+        } else if (array[1] === "-") {
+            array[0] -= array[2]
+        } else if (array[1] === "*") {
+            array[0] *= array[2]
+        } else {
+            array[0] /= array[2]
+        }
+        array.pop()
+        array.pop()
+        num1 = array[0]
+        array.pop()
+        document.getElementById("demo").innerHTML = num1
+    }
 }
