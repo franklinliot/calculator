@@ -1,133 +1,179 @@
 body {
-    background-color: rgba(0, 255, 242, 0.107);
+    background-color: rgba(203, 252, 249, 0.438);
+}
+
+p {
+    position: relative;
+    right: 10px;
 }
 
 .container {
     font-size: 40px;
-    width: 400px;
+    width: 408px;
     background: LightGray;
     display: grid;
-    grid-template-columns: 100px 100px 100px 100px;
-    grid-template-rows: 100px 100px 100px 100px 100px 100px;
+    grid-template-columns: 102px 102px 102px 102px;
+    grid-template-rows: 102px 102px 102px 102px 102px 102px;
+    border: 4px solid black;
 }
 
-
-.dtext{
-    font-size: 40px;
-    width: 400px;
-    grid-column-start: 1;
-    background: rgb(92, 92, 92);
+.dText {
+    width: 411px;
+    grid-column: 1 / -1;
+    background: rgba(189, 189, 189, 0.125);
     display: grid;
-}
+    border-bottom: 4px solid black;
+    text-align:  right;
 
-.d0 {
-    font-size: 40px;
-    width: 100%;
-    grid-column-start: 1;
-    background: LightGray;
-    display: grid;
-}
-
-.d1 {
-    font-size: 40px;
-    width: 100%;
-    
-    background: LightGray;
-    display: grid;
-}
-
-.d2 {
-    font-size: 40px;
-    width: 100%;
-    
-    background: LightGray;
-    display: grid;
-}
-
-.d3 {
-    font-size: 40px;
-    width: 100%;
-    
-    background: LightGray;
-    display: grid;
-}
-
-.d4 {
-    font-size: 40px;
-    width: 100%;
-    
-    background: LightGray;
-    display: grid;
-}
-
-.d5 {
-    font-size: 40px;
-    width: 100%;
-    
-    background: LightGray;
-    display: grid;
-}
-
-.d6 {
-    font-size: 40px;
-    width: 100%;
-    
-    background: LightGray;
-    display: grid;
 }
 
 .d7 {
-    font-size: 40px;
     width: 100%;
-    
-    background: LightGray;
+    grid-column: 1 / 1;
     display: grid;
 }
 
 .d8 {
-    font-size: 40px;
     width: 100%;
-    
-    background: LightGray;
     display: grid;
 }
 
 .d9 {
-    font-size: 40px;
     width: 100%;
-    
-    background: LightGray;
     display: grid;
 }
 
-.d10 {
-    font-size: 40px;
+.d0 {
     width: 100%;
-    
-    background: LightGray;
+    grid-column: 1/ 3;
     display: grid;
 }
 
-.d11{
-    font-size: 40px;
+.d1 {
     width: 100%;
-    
-    background: LightGray;
+    grid-column: 1/ 1;
     display: grid;
 }
 
-.d12 {
-    font-size: 40px;
+.d2 {
     width: 100%;
-    
-    background: LightGray;
     display: grid;
 }
 
-.d13 {
-    font-size: 40px;
+.d3 {
     width: 100%;
-    
-    background: LightGray;
     display: grid;
+}
+
+.d4 {
+    width: 100%;
+    grid-column: 1/ 1;
+    display: grid;
+}
+
+.d5 {
+    width: 100%;
+    display: grid;
+}
+
+.d6 {
+    width: 100%;
+    display: grid;
+}
+
+.dAdd {
+    width: 100%;
+    display: grid;
+}
+
+.dSubtract {
+    width: 100%;
+    display: grid;
+}
+
+.dMultiply {
+    width: 100%;
+    display: grid;
+}
+
+.dResult {
+    width: 100%;
+    display: grid;
+}
+
+.dClearArray {
+    width: 100%;
+    display: grid;
+}
+
+.dPlusMinus {
+    width: 100%;
+    display: grid;
+}
+
+.dPercent {
+    width: 100%;
+    display: grid;
+}
+
+.dDivide {
+    width: 100%;
+    display: grid;
+}
+
+.dDot {
+    width: 100%;
+    display: grid;
+}
+
+#my7,
+#my8,
+#my9,
+#my4,
+#my5,
+#my6,
+#my1,
+#my2,
+#my3,
+#my0,
+#myDot {
+    background-color: #4CAF50;
+    /* Green */
+    font-size: 40px;
+}
+
+#my7:hover,
+#my8:hover,
+#my9:hover,
+#my4:hover,
+#my5:hover,
+#my6:hover,
+#my1:hover,
+#my2:hover,
+#my3:hover,
+#my0:hover,
+#myDot:hover {
+    background-color: #4caf4fb2;
+}
+
+#myAC,
+#myPlusMinus,
+#myPercent {
+    background-color: rgba(83, 0, 238, 0.418);
+    font-size: 40px;
+}
+
+#myAC:hover,
+#myPlusMinus:hover,
+#myPercent:hover {
+    background-color: rgba(83, 0, 238, 0.205);
+}
+
+#myDivide, #myMultiply, #mySubtract, #myPlus, #myResult{
+    font-size: 40px;
+    background-color: rgb(255, 123, 0);
+}
+
+#myDivide:hover, #myMultiply:hover, #mySubtract:hover, #myPlus:hover, #myResult:hover{
+    background-color: rgba(255, 123, 0, 0.692);
 }
